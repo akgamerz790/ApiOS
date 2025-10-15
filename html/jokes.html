@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes API - API Hub</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/jokes.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1 onclick="location.href='../index.html'">API Hub</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="pokemon.html">Pokémon</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="crypto.html">Crypto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <div class="header-icon">😂</div>
+            <h1>Jokes API</h1>
+            <p>Random jokes to brighten your day</p>
+        </header>
+
+        <section class="api-section">
+            <div class="section-header">
+                <h2>Try It Out</h2>
+                <button class="fetch-btn" id="mainFetchBtn">Get Data</button>
+            </div>
+
+            <div class="input-group" id="inputContainer"></div>
+
+            <div id="result" class="result-box"></div>
+        </section>
+
+        <section class="api-info">
+            <h2>About This API</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>📡 Endpoint</h3>
+                    <code>https://official-joke-api.appspot.com/random_joke</code>
+                </div>
+                <div class="info-item">
+                    <h3>🔑 Authentication</h3>
+                    <p>None required</p>
+                </div>
+                <div class="info-item">
+                    <h3>📊 Data Includes</h3>
+                    <p>Setup, punchline, joke type</p>
+                </div>
+                <div class="info-item">
+                    <h3>🌍 Coverage</h3>
+                    <p>Hundreds of jokes</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 API Hub - Jokes API</p>
+    </footer>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/jokes.js"></script>
+</body>
+</html>

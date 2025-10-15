@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data Hub - Free Public APIs</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>API Hub</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#weather" data-api="weather">Weather</a></li>
+                <li><a href="#countries" data-api="countries">Countries</a></li>
+                <li><a href="#quotes" data-api="quotes">Quotes</a></li>
+                <li><a href="#github" data-api="github">GitHub Users</a></li>
+                <li><a href="#names" data-api="names">Name Analysis</a></li>
+                <li><a href="#facts" data-api="facts">Cat Facts</a></li>
+                <li><a href="#dogs" data-api="dogs">Dog Images</a></li>
+                <li><a href="#users" data-api="users">Dummy Users</a></li>
+                <li><a href="#jokes" data-api="jokes">Jokes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="hero">
+            <h1>Explore Free Public APIs</h1>
+            <p>Access real-time data from multiple sources without authentication</p>
+        </header>
+
+        <!-- Weather Section -->
+        <section id="weather" class="api-section">
+            <div class="section-header">
+                <h2>Weather Information</h2>
+                <button class="fetch-btn" onclick="fetchWeather()">Get Weather</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="cityInput" placeholder="Enter city name (e.g., London)">
+                <button onclick="fetchWeatherByCity()">Search City</button>
+            </div>
+            <div id="weatherResult" class="result-box"></div>
+        </section>
+
+        <!-- Countries Section -->
+        <section id="countries" class="api-section">
+            <div class="section-header">
+                <h2>Country Data</h2>
+                <button class="fetch-btn" onclick="fetchCountries()">Get All Countries</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="countryInput" placeholder="Enter country name">
+                <button onclick="fetchCountryByName()">Search Country</button>
+            </div>
+            <div id="countriesResult" class="result-box grid-result"></div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="api-section">
+            <div class="section-header">
+                <h2>Random Quotes</h2>
+                <button class="fetch-btn" onclick="fetchQuote()">Get Random Quote</button>
+            </div>
+            <div id="quotesResult" class="result-box quote-box"></div>
+        </section>
+
+        <!-- GitHub Section -->
+        <section id="github" class="api-section">
+            <div class="section-header">
+                <h2>GitHub User Info</h2>
+            </div>
+            <div class="input-group">
+                <input type="text" id="githubInput" placeholder="Enter GitHub username">
+                <button onclick="fetchGithubUser()">Search User</button>
+            </div>
+            <div id="githubResult" class="result-box"></div>
+        </section>
+
+        <!-- Names Section -->
+        <section id="names" class="api-section">
+            <div class="section-header">
+                <h2>Name Analysis</h2>
+            </div>
+            <div class="input-group">
+                <input type="text" id="nameInput" placeholder="Enter a name">
+                <button onclick="analyzeName()">Analyze Name</button>
+            </div>
+            <div id="namesResult" class="result-box"></div>
+        </section>
+
+        <!-- Cat Facts Section -->
+        <section id="facts" class="api-section">
+            <div class="section-header">
+                <h2>Cat Facts</h2>
+                <button class="fetch-btn" onclick="fetchCatFact()">Get Random Fact</button>
+            </div>
+            <div id="factsResult" class="result-box"></div>
+        </section>
+
+        <!-- Dog Images Section -->
+        <section id="dogs" class="api-section">
+            <div class="section-header">
+                <h2>Random Dog Images</h2>
+                <button class="fetch-btn" onclick="fetchDogImage()">Get Dog Image</button>
+            </div>
+            <div id="dogsResult" class="result-box"></div>
+        </section>
+
+        <!-- Dummy Users Section -->
+        <section id="users" class="api-section">
+            <div class="section-header">
+                <h2>Dummy User Data</h2>
+                <button class="fetch-btn" onclick="fetchUsers()">Get Users</button>
+            </div>
+            <div class="input-group">
+                <input type="number" id="userLimit" placeholder="Number of users (1-100)" min="1" max="100" value="5">
+            </div>
+            <div id="usersResult" class="result-box grid-result"></div>
+        </section>
+
+        <!-- Jokes Section -->
+        <section id="jokes" class="api-section">
+            <div class="section-header">
+                <h2>Random Jokes</h2>
+                <button class="fetch-btn" onclick="fetchJoke()">Get Random Joke</button>
+            </div>
+            <div id="jokesResult" class="result-box"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 API Hub - All data from free public APIs</p>
+    </footer>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

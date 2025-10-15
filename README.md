@@ -1,0 +1,1 @@
+# An open-source collection of ready-to-use APIs with live response previews, clean JSON output, and zero setup.

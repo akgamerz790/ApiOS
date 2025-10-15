@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon API - API Hub</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pokemon.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1 onclick="location.href='../index.html'">API Hub</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="countries.html">Countries</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+                <li><a href="github.html">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <div class="header-icon">⚡</div>
+            <h1>Pokémon API</h1>
+            <p>Complete Pokémon database with stats, abilities, and types</p>
+        </header>
+
+        <section class="api-section">
+            <div class="section-header">
+                <h2>Try It Out</h2>
+                <button class="fetch-btn" id="mainFetchBtn">Get Data</button>
+            </div>
+
+            <div class="input-group" id="inputContainer"></div>
+
+            <div id="result" class="result-box"></div>
+        </section>
+
+        <section class="api-info">
+            <h2>About This API</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>📡 Endpoint</h3>
+                    <code>https://pokeapi.co/api/v2/pokemon/{name}</code>
+                </div>
+                <div class="info-item">
+                    <h3>🔑 Authentication</h3>
+                    <p>None required</p>
+                </div>
+                <div class="info-item">
+                    <h3>📊 Data Includes</h3>
+                    <p>Stats, abilities, types, sprites, moves</p>
+                </div>
+                <div class="info-item">
+                    <h3>🌍 Coverage</h3>
+                    <p>1000+ Pokémon</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 API Hub - Pokémon API</p>
+    </footer>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/pokemon.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries API - API Hub</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/countries.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1 onclick="location.href='../index.html'">API Hub</h1>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="pokemon.html">Pokémon</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="crypto.html">Crypto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <div class="header-icon">🌍</div>
+            <h1>Countries API</h1>
+            <p>Explore comprehensive information about all countries worldwide</p>
+        </header>
+
+        <section class="api-section">
+            <div class="section-header">
+                <h2>Try It Out</h2>
+                <button class="fetch-btn" id="mainFetchBtn">Get Data</button>
+            </div>
+
+            <div class="input-group" id="inputContainer"></div>
+
+            <div id="result" class="result-box"></div>
+        </section>
+
+        <section class="api-info">
+            <h2>About This API</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>📡 Endpoint</h3>
+                    <code>https://restcountries.com/v3.1/all</code>
+                </div>
+                <div class="info-item">
+                    <h3>🔑 Authentication</h3>
+                    <p>None required</p>
+                </div>
+                <div class="info-item">
+                    <h3>📊 Data Includes</h3>
+                    <p>Name, capital, population, currencies, languages</p>
+                </div>
+                <div class="info-item">
+                    <h3>🌍 Coverage</h3>
+                    <p>250+ countries</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 API Hub - Countries API</p>
+    </footer>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/countries.js"></script>
+</body>
+</html>
