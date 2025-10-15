@@ -1,9 +1,9 @@
 # 🧩 ApiOS — The Operating System for Open APIs
 
-![License](https://img.shields.io/github/license/yourusername/ApiOS?color=00ffc3)
-![Stars](https://img.shields.io/github/stars/yourusername/ApiOS?color=yellow)
-![Last Commit](https://img.shields.io/github/last-commit/yourusername/ApiOS?color=orange)
-![Repo Size](https://img.shields.io/github/repo-size/yourusername/ApiOS?color=blue)
+![License](https://img.shields.io/github/license/akgamerz790/ApiOS?color=00ffc3)
+![Stars](https://img.shields.io/github/stars/akgamerz790/ApiOS?color=yellow)
+![Last Commit](https://img.shields.io/github/last-commit/akgamerz790/ApiOS?color=orange)
+![Repo Size](https://img.shields.io/github/repo-size/akgamerz790/ApiOS?color=blue)
 
 > **ApiOS** is a modern, web-based API playground — explore, test, and interact with free public APIs like jokes, facts, weather, and world data, all inside a sleek HTML/CSS/JS interface.
 
